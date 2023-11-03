@@ -9,7 +9,7 @@
 }
 /* CSS for the carousel container */
 .carousel {
-    width: 40%; /* Set the width of the container (test3) */
+    width: 40%; /* Set the width of the container (test4) */
     height: 20%; /* Set the height to your preferred percentage (e.g., 50%) */
     overflow: hidden; /* Ensure the image is contained within the container */
 }
