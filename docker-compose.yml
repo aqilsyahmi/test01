@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: ./frontend/client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+  
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      # Any environment variables your backend requires can be listed here
+      - NODE_ENV=development
+      - PORT=4000
+      - TOKEN_KEY=your_secret_key_here
+      - MONGO_URI=mongodb+srv://User1:Passw0rd@3x03team14.9bt64ou.mongodb.net/?retryWrites=true&w=majority
