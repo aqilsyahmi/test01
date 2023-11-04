@@ -7,5 +7,20 @@ pipeline {
       }
     }
 
+    stage('Build Code') {
+      steps {
+        sh '''# Navigate to the directory
+cd /var/jenkins_home/workspace/test01_main
+
+# Cleanup Docker resources to free up space
+docker system prune -af --volumes
+
+# Build and run Docker containers
+docker-compose build
+docker-compose up -d
+'''
+      }
+    }
+
   }
 }
