@@ -17,7 +17,7 @@ const {notFound} = require('./middlewares/errorHandler')
 //middleware
 // app.use(cors()); //all requests from all origins
 app.use((req, res, next) => {
-res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000") // Replace with your frontend's URL
+res.setHeader("Access-Control-Allow-Origin", "http://18.143.174.103:3000/") // Replace with your frontend's URL
 res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")
 res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization")
 next()
@@ -47,7 +47,7 @@ app.listen(PORT, () => {console.log(`Server is running at PORT ${PORT}`);});
 connectDB();
 
 const corsOptions = {
-origin: 'http://localhost:3000', // Replace with the URL of your frontend
+origin: 'http://18.143.174.103:3000/', // Replace with the URL of your frontend
 methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 credentials: true, // Allow cookies and authorization headers
 };
