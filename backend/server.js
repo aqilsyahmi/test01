@@ -36,7 +36,7 @@ app.use('/api/categories', categoryRoute);
 app.use('/uploads', express.static('uploads'));
 app.use('/api/filter', filterRoute);
 
-// Serve frontend static assets.
+// Serve frontend static assets..
 app.use(express.static(path.join(__dirname, '../frontend/client/build')));
 
 // Catch-all route to serve the React app
