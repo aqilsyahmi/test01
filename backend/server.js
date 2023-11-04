@@ -18,7 +18,7 @@ const {notFound} = require('./middlewares/errorHandler')
 //middleware
 // app.use(cors()); //all requests from all origins
 app.use((req, res, next) => {
-res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000") // Replace with your frontend's URL
+res.setHeader("Access-Control-Allow-Origin", "http://54.169.168.70:3000") // Replace with your frontend's URL
 res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")
 res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization")
 next()
@@ -34,12 +34,6 @@ app.use('/api/products', productRoute);
 app.use('/api/categories', categoryRoute);
 app.use('/uploads', express.static('uploads'));
 app.use('/api/filter', filterRoute);
-
-
-// Serve the index.html file for all unmatched routes
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/client/public/index.html'));
-  });
 app.use(notFound)
 //start the server
 const connectDB = require("./database/db");
