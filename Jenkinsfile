@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'ls -la'
+        sh '''cd backend
+npm run dev'''
       }
     }
 
