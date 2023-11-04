@@ -38,7 +38,7 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api/filter', filterRoute);
 
 app.get('/', (req, res) => {
-    res.json({ message: "Backend server is running!" });
+    res.json({ message: "Backend server is running!!" });
 });
 
 // Serve static files from the frontend's build directory
