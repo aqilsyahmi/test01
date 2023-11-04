@@ -16,8 +16,8 @@ cd /var/jenkins_home/workspace/test01_main
 /usr/bin/docker system prune -af --volumes
 
 # Build and run Docker containers
-/usr/bin/docker-compose build
-/usr/bin/docker-compose up -d
+/usr/local/bin/docker-compose build
+/usr/local/bin/docker-compose up -d
 '''
       }
     }
