@@ -51,7 +51,7 @@ app.get('*', (req, res) => {
 
 app.use(notFound);
 
-// Connect to DB and then start the server
+// Connect to DB and then start the servers
 const connectDB = require("./database/db");
 
 connectDB().then(() => {
