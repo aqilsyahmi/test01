@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('test') {
+    stage('Checkout Code') {
       steps {
-        sh 'ls '
+        git(url: 'https://github.com/aqilsyahmi/test01.git', branch: 'main')
       }
     }
 
