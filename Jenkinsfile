@@ -13,11 +13,11 @@ pipeline {
 cd /var/jenkins_home/workspace/test01_main
 
 # Cleanup Docker resources to free up space
-docker system prune -af --volumes
+/usr/bin/docker system prune -af --volumes
 
 # Build and run Docker containers
-docker-compose build
-docker-compose up -d
+/usr/bin/docker-compose build
+/usr/bin/docker-compose up -d
 '''
       }
     }
