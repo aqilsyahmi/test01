@@ -1,0 +1,156 @@
+:root{
+    --primary: #1aac83
+}
+
+body{
+    background: #f1f1f1;
+    margin: 0;
+    font-family:sans-serif;
+}
+
+header{
+    background: #fff;
+}
+  
+header .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+header a{
+    color: #333;
+    text-decoration: none;
+}
+  
+.pages{
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/*Login and Sign up Style*/
+.signup-container, .login-container{
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Ensure form takes full viewport height */
+}
+  
+.signup-form, .login-form {
+    width: 300px; 
+}
+
+.cart {
+    text-align: center;
+  }
+  
+  .cart-table-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cart-table {
+    width: 80%; /* Adjust the width as needed */
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .cart-item-image {
+    width: 100px; /* Adjust the image width as needed */
+    height: auto;
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+  }
+  
+  /* Add this CSS to your stylesheet */
+.delete-button {
+  background-color: #ff6b6b; /* Background color for the button */
+  color: #fff; /* Text color */
+  padding: 8px 16px; /* Padding around the button text */
+  border: none; /* Remove the button border */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Cursor style on hover */
+  font-size: 14px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.delete-button:hover {
+  background-color: #ff4646; /* Change background color on hover */
+}
+
+/* ProductDetail.css */
+.product-detail-container {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-details {
+  margin-top: 10px;
+}
+
+.add-to-cart-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.product-image {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Prevent extra spacing below the image */
+}
+
+.thumbnail-img {
+  max-width: 100px; /* Set maximum width */
+  max-height: 100px; /* Set maximum height */
+  object-fit: cover; /* Ensure the image covers the specified area */
+}
+
+/* sidebar */
+
+.sidebar {
+  position: flex;
+  background-color: #343a40; /* Sidebar background color */
+  padding-top: 20px;
+  color: white; /* Text color */
+}
+.sidebar .nav-link {
+  color: #adb5bd; /* Sidebar text color */
+}
+.sidebar .nav-link.active {
+  color: #ffffff; /* Active link text color */
+  font-weight: bold;
+}
+.sidebar .nav-link:hover {
+  color: #ffffff; /* Hovered link text color */
+}
+.sidebar h1 {
+  color: #ffffff; /* Header text color */
+  font-size: 1.5rem;
+}
+

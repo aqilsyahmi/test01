@@ -1,0 +1,115 @@
+
+.banner {
+    width: 100%;
+    height: 300px;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+/* CSS for the carousel container */
+.carousel {
+    width: 40%; /* Set the width of the container */
+    height: 20%; /* Set the height to your preferred percentage (e.g., 50%) */
+    overflow: hidden; /* Ensure the image is contained within the container */
+}
+
+/* CSS for the carousel image */
+.carousel img {
+    width: 100%; /* Make the image width 100% to fill the container */
+    height: 100%; /* Make the image height 100% to fill the container */
+    object-fit: cover; /* Scale the image while maintaining its aspect ratio */
+    object-position: center; /* Center the image within the container */
+}
+
+/* Add this CSS to your stylesheet or a separate CSS file */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Adjust the gap between products as needed */
+}
+
+.product {
+    border: 1px solid #FFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Adjust the styling of individual product items as needed */
+/* Footer styles */
+.footer {
+    background-color: #fafafa;
+    color: #3F3F3F;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 100px; /* Add margin between footer and newsletter section */
+}
+
+.footer-logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display links in a horizontal line */
+    justify-content: center; /* Center the links horizontally */
+}
+
+.footer-links li {
+    margin: 0 20px; /* Add horizontal margin to separate links */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #A9A9A9;
+}
+
+/* Horizontal layout for social links */
+.social-link {
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 10px; /* Add horizontal margin to separate links */
+}
+
+/* Add more styles as needed */
+.product-card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+/* .product-image {
+    width: 100%;
+    height: 250px; /* Set the image height */
+
+/*    overflow: hidden;
+} */
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 10px;
+}
+
+.add-to-cart-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3;
+}
+
