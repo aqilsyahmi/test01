@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
@@ -33,13 +34,13 @@ app.use('/api/products', productRoute);
 app.use('/api/categories', categoryRoute);
 app.use('/uploads', express.static('uploads'));
 app.use('/api/filter', filterRoute);
-app.use(notFound)
+
 
 // Serve the index.html file for all unmatched routes
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/client/public/index.html'));
   });
-
+app.use(notFound)
 //start the server
 const connectDB = require("./database/db");
 
@@ -47,7 +48,7 @@ app.listen(PORT, () => {console.log(`Server is running at PORT ${PORT}`);});
 connectDB();
 
 const corsOptions = {
-origin: 'http://localhost:3000', // Replace with the URL of your frontend
+origin: 'http://54.169.168.70:3000', // Replace with the URL of your frontend
 methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 credentials: true, // Allow cookies and authorization headers
 };
