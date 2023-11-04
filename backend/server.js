@@ -22,7 +22,7 @@ const corsOptions = {
 };
 
 // Middleware
-app.use(cors(corsOptions));  // Use the CORS middleware
+app.use(cors(corsOptions));  // Use the CORS middleware.
 app.use(morgan('dev'));
 app.use(express.json());  // Use express.json instead of bodyParser.json
 app.use(express.urlencoded({ extended: true }));  // Use express.urlencoded instead of bodyParser.urlencoded
