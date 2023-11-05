@@ -18,6 +18,9 @@ cd /var/jenkins_home/workspace/test01_main
 # Build and run Docker containers
 /usr/local/bin/docker-compose build
 /usr/local/bin/docker-compose up -d
+
+# Run the functional tests
+docker-compose exec frontend npm run functional-test
 '''
       }
     }
