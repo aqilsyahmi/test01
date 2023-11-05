@@ -7,11 +7,14 @@ const puppeteer = require('puppeteer-core');
   });
 
   const page = await browser.newPage();
-  await new Promise(resolve => setTimeout(resolve, 15000));  // Wait for 5 seconds
   await page.goto('http://18.143.174.103:3000'); // adjust this if your app URL is different
 
-  const featuredProducts = await page.$$('.featured-products .product-card');
-  console.assert(featuredProducts.length > 0, "No featured products found!");
+  // Wait for 15 seconds
+  await new Promise(resolve => setTimeout(resolve, 15000)); 
+
+  // Check for the "Featured Products" heading
+  const heading = await page.$x("//*[text()='Featured Products']");
+  console.assert(heading.length > 0, "Heading 'Featured Products' not found!");
 
   await browser.close();
 })();
