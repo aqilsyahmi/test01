@@ -5,6 +5,9 @@ FROM node:20.9.0-alpine3.18
 # Set working directory
 WORKDIR /usr/src/app
 
+# Install Chromium dependencies and Chromium
+RUN apk add --no-cache chromium
+
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
