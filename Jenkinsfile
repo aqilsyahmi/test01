@@ -25,5 +25,12 @@ cd /var/jenkins_home/workspace/test01_main
       }
     }
 
+    stage('Test Code') {
+      steps {
+        sh '''# Run the functional tests
+docker-compose exec -T frontend npm run functional-test'''
+      }
+    }
+
   }
 }
